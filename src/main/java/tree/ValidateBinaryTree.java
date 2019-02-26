@@ -19,11 +19,4 @@ public class ValidateBinaryTree {
                 && valid(node.left, low, new Double(node.val))
                 && valid(node.right, new Double(node.val), max);
     }
-
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
 }
