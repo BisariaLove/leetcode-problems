@@ -21,11 +21,11 @@ public class ReversePolishNotation {
                 int a = stack.pop();
                 int b = stack.pop();
 
-                switch(token){
-                    case "+" : stack.push(a+b); break;
-                    case "-" : stack.push(b-a); break;
-                    case "*" : stack.push(a*b); break;
-                    case "/" : stack.push((a==0||b==0)?0:(b/a)); break;
+                switch(token.charAt(0)){
+                    case '+' : stack.push(a+b); break;
+                    case '-' : stack.push(b-a); break;
+                    case '*' : stack.push(a*b); break;
+                    case '/' : stack.push((a==0||b==0)?0:(b/a)); break;
                 }
             } else{
                 stack.push(Integer.parseInt(token));
