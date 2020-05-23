@@ -4,6 +4,10 @@ public class Demo3ThreadSynchronization {
 
     int counter = 0;
 
+    public synchronized void incrementCounter() {
+        counter = counter+1;
+    }
+
     public static void main(String args[]) {
         Demo3ThreadSynchronization obj = new Demo3ThreadSynchronization();
         obj.doWork();
@@ -16,7 +20,7 @@ public class Demo3ThreadSynchronization {
             public void run() {
 
                 for(int i=0; i<10000; i++) {
-                    counter++;
+                    incrementCounter();
                 }
             }
         });
@@ -25,7 +29,7 @@ public class Demo3ThreadSynchronization {
             public void run() {
 
                 for(int i=0; i<10000; i++) {
-                    counter++;
+                    incrementCounter();
                 }
             }
         });
