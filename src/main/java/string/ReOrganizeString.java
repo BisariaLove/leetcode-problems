@@ -5,7 +5,7 @@ import java.util.*;
 
 public class ReOrganizeString {
 
-    //special attention here to 
+    //special attention here to
     // how you encode each value of count to store the count and char representation in int
     public String reorganizeString(String S) {
 
