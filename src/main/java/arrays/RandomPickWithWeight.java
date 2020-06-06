@@ -6,7 +6,7 @@ public class RandomPickWithWeight {
     private int[] w_cum;
     private int sum;
 
-    public Solution(int[] w) {
+    public RandomPickWithWeight(int[] w) {
         this.w_cum = new int[w.length];
         this.sum = 0;
 
