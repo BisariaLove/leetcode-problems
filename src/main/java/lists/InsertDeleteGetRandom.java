@@ -10,7 +10,7 @@ public class InsertDeleteGetRandom {
     Random rand ;
 
     /** Initialize your data structure here. */
-    public RandomizedSet() {
+    public InsertDeleteGetRandom() {
         lis = new ArrayList();
         map = new HashMap();
         rand = new Random();
