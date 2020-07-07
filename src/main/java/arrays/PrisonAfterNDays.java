@@ -2,6 +2,8 @@ package arrays;
 
 //https://leetcode.com/problems/prison-cells-after-n-days/
 //Explanation - https://www.youtube.com/watch?v=XaayRYdKG0I
+import java.util.*;
+
 public class PrisonAfterNDays {
 
     public int[] prisonAfterNDays(int[] cells, int N) {
