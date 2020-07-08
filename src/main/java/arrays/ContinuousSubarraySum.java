@@ -18,8 +18,9 @@ public class ContinuousSubarraySum {
             if(k != 0) sum = sum%k;
             if(map.containsKey(sum)) {
                 if(i - map.get(sum)>1) return true;
-                else map.put(sum, i);
+
             }
+            else map.put(sum, i);
         }
 
         return false;
